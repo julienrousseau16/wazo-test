@@ -1,9 +1,11 @@
+import AdminContainer from './components/AdminContainer'
+
 import './App.css'
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Project init</h1>
+      <AdminContainer />
     </div>
   )
 }

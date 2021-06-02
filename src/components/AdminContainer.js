@@ -8,6 +8,7 @@ import axios from 'axios'
 
 // import UsersList from './UsersList'
 
+import CreateUser from './CreateUser'
 import User from './User'
 
 const AdminContainer = () => {
@@ -52,6 +53,7 @@ const AdminContainer = () => {
         {
           usersList.map(user => <User key={user.uuid} user={user} />)
         }
+        <CreateUser token={token} />
       </div>
     )
   } else {

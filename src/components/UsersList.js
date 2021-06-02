@@ -8,8 +8,6 @@ const UsersList = (props) => {
         <TextField source='firstname' />
         <TextField source='lastname' />
         <TextField source='email' />
-        <TextField source='extension' />
-        <TextField source='code' />
         <EditButton basePath='' />
         <DeleteButton />
       </Datagrid>

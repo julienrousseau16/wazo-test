@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
   background-color: #fff;
 }
 
@@ -20,6 +21,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.NewUser {
+  margin-top: 20px;
+}
+
+.NewUser button {
+  padding: 8px 10px;
+  background-color: #98c451;
+  border-radius: 45px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.NewUser span {
+  margin-right: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #98c451;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 420px) {

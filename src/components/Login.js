@@ -44,7 +44,7 @@ const Login = () => {
 
   return (
     <div className='Login'>
-      <img id='Logo' src={Logo} />
+      <img id='Logo' src={Logo} alt='wazo-logo' />
       <form onSubmit={connectionAttempt}>
         <label htmlFor='username'>Username :</label>
         <input id='username' className='auth-input' name='username' type='text' value={formData.username} onChange={handleChange} />

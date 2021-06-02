@@ -1,0 +1,85 @@
+.CreateUser {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.CreateUserContainer {
+  padding: 5%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.CreateUserContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CreateUserContainer label {
+  margin-bottom: 3px;
+  font-size: 20px;
+}
+
+.user-input {
+  padding: 5px 10px;
+  width: 75%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(182, 177, 177);
+  font-size: 15px;
+  color: #2b2e89;
+}
+
+#user-submit {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #2b2e89;
+  color: #fff;
+  cursor: pointer;
+}
+
+#user-submit:hover {
+  background-color: #7679d1;
+  ;
+}
+
+.CreateUser button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: crimson;
+  color: #fff;
+  cursor: pointer;
+}
+
+.CreateUser button:hover {
+  background-color: crimson;
+  background-color: rgb(121, 9, 31);
+}
+
+@media screen and (min-width: 420px) {
+  .CreateUserContainer {
+    width: 50%;
+    height: 80%;
+  }
+}

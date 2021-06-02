@@ -11,6 +11,7 @@ import './AdminContainer.css'
 const AdminContainer = () => {
 
   const { token } = useContext(TokenContext)
+  const [modal, setModal] = useState(false)
 
   const usersUrl = 'https://quintana.wazo.community/api/auth/0.1/users'
   const auth = {
@@ -42,11 +43,17 @@ const AdminContainer = () => {
             usersList.map(user => <User key={user.uuid} user={user} />)
           }
         </div>
-        <CreateUser
+        <div className='NewUser'>
+          <button onClick={()=> setModal(true)}>
+            <span>+</span>NEW USER
+          </button>
+        </div>
+        {modal && <CreateUser
           auth={auth}
           usersUrl={usersUrl}
           usersList={usersList}
-          setUsersList={setUsersList} />
+          setUsersList={setUsersList}
+          setModal={setModal} />}
       </div>
     )
   } else {

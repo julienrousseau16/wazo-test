@@ -30,6 +30,7 @@ const CreateUser = ({ auth, usersUrl, usersList, setUsersList }) => {
         const newUser = [...usersList]
         newUser.push(res.data)
         setUsersList(newUser)
+        setFormData(initialValues)
       })
   }
 

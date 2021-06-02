@@ -1,0 +1,63 @@
+.User {
+  margin: 5px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background-color: #cdcef1;
+  border-radius: 10px;
+}
+
+#user-name {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #2b2e89;
+}
+
+.EmailsContainer, #user-purpose {
+  color: #797de4;
+}
+
+.UserActions {
+  margin: 10px 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.UserActions button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#user-edit {
+  margin-right: 5px;
+  background-color: #2b2e89;
+}
+#user-edit:hover {
+  background-color: #7679d1;
+}
+#user-delete {
+  background-color: crimson;
+}
+#user-delete:hover {
+  background-color: rgb(121, 9, 31);
+}
+
+@media screen and (min-width: 420px) {
+  .User {
+    width: 46%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .User {
+    width: 30%;
+  }
+}

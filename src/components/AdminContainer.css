@@ -1,0 +1,31 @@
+.AdminContainer {
+  padding: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.AdminContainer h1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  width: 80%;
+  color: rgb(65, 64, 64);
+}
+
+.ListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 420px) {
+  .ListContainer {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

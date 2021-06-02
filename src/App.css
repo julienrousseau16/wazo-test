@@ -1,8 +1,9 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(167, 164, 164);
-    min-height: 100vh;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(167, 164, 164);
+  min-height: 100vh;
 }

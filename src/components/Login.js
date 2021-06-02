@@ -4,6 +4,9 @@ import axios from 'axios'
 
 import { TokenContext } from '../tokenContext'
 
+import Logo from '../pictures/wazo.png'
+import './Login.css'
+
 const Login = () => {
 
   const { token, setToken } = useContext(TokenContext)
@@ -40,20 +43,21 @@ const Login = () => {
   }
 
   return (
-    <>
+    <div className='Login'>
+      <img id='Logo' src={Logo} />
       <form onSubmit={connectionAttempt}>
         <label htmlFor='username'>Username :</label>
-        <input id='username' name='username' type='text' value={formData.username} onChange={handleChange} />
+        <input id='username' className='auth-input' name='username' type='text' value={formData.username} onChange={handleChange} />
         <label htmlFor='password'>Password :</label>
-        <input id='password' name='password' type='password' value={formData.password} onChange={handleChange} />
-        <input type='submit' value='SIGN IN' />
+        <input id='password' className='auth-input' name='password' type='password' value={formData.password} onChange={handleChange} />
+        <input id='auth-button' type='submit' value='SIGN IN' />
       </form>
       {err &&
-        <div>
+        <div id='auth-error'>
           Your username/password may be wrong... Please try again !
                 </div>}
-      {token !== '' && <Redirect to='home' />}
-    </>
+      {token !== '' && <Redirect to='/home' />}
+    </div>
   );
 }
 

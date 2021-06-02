@@ -13,12 +13,14 @@ const App = () => {
 
   return (
     <Router>
+      <div className='App'>
       <Switch>
         <TokenContext.Provider value={{ token, setToken }}>
           <Route exact path='/' component={Login} />
           <Route path='/home' component={AdminContainer} />
         </TokenContext.Provider>
       </Switch>
+      </div>
     </Router>
   )
 }

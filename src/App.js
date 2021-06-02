@@ -1,12 +1,14 @@
-import AdminContainer from './components/AdminContainer'
+
+import Login from './components/Login'
 
 import './App.css'
 
 const App = () => {
   return (
-    <div className="App">
-      <AdminContainer />
-    </div>
+    
+      <div className="App">
+        <Login />
+      </div>
   )
 }
 
